@@ -1,14 +1,15 @@
 @import "utils/libs";
 @import "utils/vars";
 @import "utils/mixins";
-@import "utils/fonts";
 
 html {
+  font-family: $base-font-family;
   font-size: $base-font-size;
   height: 100%;
 }
 
 body {
+  min-width: 1024px;
   height: 100%;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -77,6 +78,25 @@ section { position: relative; }
 input,
 select,
 button { outline: none; }
+
+button {
+  cursor: pointer;
+}
+
+.title {
+  margin-top: 32px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: $color1;
+}
+
+.description {
+  margin-top: 8px;
+  font-size: 14px;
+  color: $color3;
+  line-height: 18px;
+}
 
 .wrapper {
   display: flex;

@@ -1,1 +1,61 @@
-header { flex: 0 0 auto; }
+.header {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 0 24px;
+  box-shadow: 0 1px 0 0 $color5;
+
+  &-link {
+    display: inline-flex;
+  }
+
+  &-menu {
+    margin-left: auto;
+
+    &__link {
+      position: relative;
+      margin: 0 16px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      color: $color3;
+      transition: color 0.5s;
+
+      &:hover {
+        color: $color9;
+
+        &:after {
+          background-color: $color9;
+        }
+      }
+
+      &:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: -18px;
+        height: 2px;
+        background-color: transparent;
+        transition: background-color 0.5s;
+      }
+
+      &--active {
+        color: $color9;
+
+        &:after {
+          background-color: $color9;
+        }
+      }
+    }
+  }
+
+  &-profile {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+}

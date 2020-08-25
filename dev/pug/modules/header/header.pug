@@ -1,1 +1,12 @@
 header.header
+    a.header-link(href='/'): img.header-link__logo(src='/static/images/logo.svg')
+
+    - const menuList = {['#dashboard']: 'Dashboard', ['#payments'] : 'Payments', ['#history'] : 'History', ['#documents'] : 'Documents', ['#faq'] : 'FAQ', ['#about'] : 'About', ['#contact-us'] : 'Contact Us'}
+
+    nav.header-menu
+            each name, link in menuList
+                a.header-menu__link(href=link)= name
+
+    button(type='button').header-profile
+        img.header-profile__avatar(src='/static/images/avatar-empty.svg')
+        img.header-profile__caret(src='/static/images/select-down.svg')

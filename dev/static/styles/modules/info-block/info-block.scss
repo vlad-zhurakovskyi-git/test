@@ -1,0 +1,25 @@
+.info-block {
+  min-height: 70px;
+  margin-top: 16px;
+  padding: 16px 34px 20px 64px;
+  background-color: $color6;
+
+  &__icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+}

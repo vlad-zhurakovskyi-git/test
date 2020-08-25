@@ -22,7 +22,6 @@ $.gulp.task('dev', $.gulp.series(
         'img:dev',
         'libsJS:dev',
         'js:dev',
-        'svg'
     )
 ));
 
@@ -35,7 +34,6 @@ $.gulp.task('build', $.gulp.series(
         'img:build',
         'libsJS:build',
         'js:build',
-        'svg'
     )
 ));
 
@@ -49,7 +47,6 @@ $.gulp.task('build-min', $.gulp.series(
         'img:build',
         'libsJS:build',
         'js:build-min',
-        'svg'
     )
 ));
 

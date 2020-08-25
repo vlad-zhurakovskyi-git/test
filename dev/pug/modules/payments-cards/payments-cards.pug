@@ -1,0 +1,17 @@
+div.payments-cards
+    div.payments-cards__row
+        mixin card(commissionValue, earnedValue, logo)
+            div.payments-cards__col
+                div.payments-cards-item
+                    div.div.payments-cards-item__inner
+                        div.payments-cards-item__info
+                            div.payments-cards-item__value= commissionValue
+                            div.payments-cards-item__key commission
+                        div.payments-cards-item__info
+                            div.payments-cards-item__value= earnedValue
+                            div.payments-cards-item__key earned
+                    img.payments-cards-item__logo(src=`/static/images/${logo}.svg`)
+
+        +card('20%', '123$', 'air-slate')
+        +card('20%', '123$', 'pdf-filler')
+        +card('20%', '678$', 'sign-now')

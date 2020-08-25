@@ -1,0 +1,31 @@
+.search {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px;
+  border: solid 1px $color12;
+  border-radius: 4px;
+  background-color: $color8;
+
+  &-label {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+
+  &__input {
+    line-height: 16px;
+    padding: 0;
+    border: none;
+    font-size: 14px;
+    background-color: transparent;
+
+    &::placeholder {
+      color: $color13;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus, {
+      -webkit-box-shadow: 0 0 0 1000px $color8 inset;
+    }
+  }
+}

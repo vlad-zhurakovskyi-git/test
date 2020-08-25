@@ -1,21 +1,23 @@
 // Colors
-$white: #ffffff;
-$black: #000000;
+$color1: #414141;
+$color2: #808080;
+$color3: #767676;
+$color4: #d4d4d4;
+$color5: #e9e9e9;
+$color6: #ddeefc;
+$color7: #f7f8fa;
+$color8: #fff;
+$color9: #ff9000;
+$color10: #6772e5;
+$color11: #45688f;
+$color12: #aaa;
+$color13: #959595;
 
-// Sizes
+// Font-size
 $base-font-size: 16px;
 
-$breakpoints: (
-  "phone"       : 400px,
-  "phone-wide"  : 480px,
-  "phablet"     : 560px,
-  "tablet-small": 640px,
-  "tablet"      : 768px,
-  "tablet-wide" : 1024px,
-  "desktop"     : 1248px,
-  "desktop-wide": 1440px
-);
+// Font-family
+$base-font-family: 'Open Sans', sans-serif;
 
-$content-size: 1024px;
-
-// Fonts
+// Container
+$content-size: 936px;

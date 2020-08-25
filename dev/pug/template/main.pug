@@ -1,4 +1,3 @@
-include ../utils/mixins
 block variables
 
 doctype html
@@ -9,9 +8,10 @@ html(lang="ru-RU")
 		<!--[if IE]>
 		meta(http-equiv='X-UA-Compatible', content="IE = edge")
 		<![endif]-->
-		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="viewport" content="width=1024")
 		meta(name="keywords" content="")
 		link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
+		link(rel="stylesheet" type='text/css' href=href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap")
 
 		<!--[if lt IE 9]>
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
@@ -19,8 +19,9 @@ html(lang="ru-RU")
 	body
 		.wrapper
 			include ../modules/header/header
-			.content
-				block content
+			div.content
+				div.container
+					include ../pages/payments
 			include ../modules/footer/footer
 		script(src="static/js/jquery-3.3.1.min.js")
 		script(src="static/js/libs.min.js")
