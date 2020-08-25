@@ -3,7 +3,10 @@ section.payments
     h3.title My Commissions & Payments
     p.description Your current commission structure is:
     include ../modules/payments-cards/payments-cards
-    div.payments-inner
-        div.payments-inner__control
+    div.payments-control
+        div.payments-control__date-picker
             include  ../modules/date-picker/date-picker
+        div.payments-control__date-picker
+            button.payments-control__btn.btn.btn__secondary.btn__md This month
+        div.payments-control__search
             include  ../modules/search/search

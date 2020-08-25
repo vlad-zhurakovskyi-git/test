@@ -1,20 +1,35 @@
-.footer {
-  display: flex;
+.date-picker {
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  height: 56px;
-  flex: 0 0 auto;
-  box-shadow: 0 -1px 0 0 $color5;
-  font-size: 12px;
-  color: $color1;
+  padding: 4px 7px;
+  border: solid 1px $color12;
+  border-radius: 4px;
+  background-color: $color8;
 
-  &__link {
-    margin: 0 4px;
-    line-height: 20px;
-    color: $color11;
+  &__arrow, &__calendar {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
 
-    &:hover {
-      text-decoration: none;
+  &__calendar {
+    margin-right: 8px;
+  }
+
+  &__arrow {
+    &--left {
+      margin-right: 15px;
     }
+
+    &--right {
+      margin-left: 15px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    color: $color1;
   }
 }

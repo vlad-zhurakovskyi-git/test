@@ -1,0 +1,21 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &__secondary {
+    min-width: 112px;
+    padding: 0 12px;
+    border: 1px solid $color9;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: $color1;
+    border-radius: 4px;
+    background-color: $color8;
+  }
+
+  &__md {
+    height: 32px;
+  }
+}

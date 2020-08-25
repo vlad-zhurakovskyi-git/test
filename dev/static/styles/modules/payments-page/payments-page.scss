@@ -1,0 +1,14 @@
+.payments {
+  &-control {
+    display: flex;
+    align-items: center;
+
+    &__search {
+      margin-left: auto;
+    }
+
+    &__btn {
+      margin-left: 12px;
+    }
+  }
+}
